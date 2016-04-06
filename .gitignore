@@ -1,0 +1,13 @@
+/test-tools/docker/files/ansible
+*~
+*.iml
+.idea
+target/
+.classpath
+.project
+.settings
+testdata/
+ansible/keys
+
+# added by GitSavvy
+/.editorconfig

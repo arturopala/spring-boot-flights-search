@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress XmlUnboundNsPrefix -->
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date %-5level %X{mdc_key}-%X{mdc_sub_key} [%logger{36}].%M\(%line\)- %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.springframework" level="WARN"/>
+    <logger name="net.sf.ehcache" level="WARN"/>
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

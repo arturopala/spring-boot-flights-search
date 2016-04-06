@@ -1,0 +1,42 @@
+<ehcache>
+    <cache name="CACHE_ROUTES"
+           maxElementsInMemory="1"
+           timeToLiveSeconds="3600"
+           eternal="false"
+           timeToIdleSeconds="86400"
+           overflowToDisk="false"
+           diskPersistent="false"
+           memoryStoreEvictionPolicy="LRU"
+           statistics="true">
+    </cache>
+    <cache name="CACHE_TIMETABLES"
+           maxElementsInMemory="1000"
+           timeToLiveSeconds="3600"
+           eternal="false"
+           timeToIdleSeconds="86400"
+           overflowToDisk="false"
+           diskPersistent="false"
+           memoryStoreEvictionPolicy="LRU"
+           statistics="true">
+    </cache>
+    <cache name="CACHE_FLIGHTS"
+           maxElementsInMemory="100000"
+           timeToLiveSeconds="900"
+           eternal="false"
+           timeToIdleSeconds="86400"
+           overflowToDisk="false"
+           diskPersistent="false"
+           memoryStoreEvictionPolicy="LRU"
+           statistics="true">
+    </cache>
+    <cache name="CACHE_ROUTES_SEARCHES"
+           maxElementsInMemory="1000"
+           timeToLiveSeconds="900"
+           eternal="false"
+           timeToIdleSeconds="86400"
+           overflowToDisk="false"
+           diskPersistent="false"
+           memoryStoreEvictionPolicy="LRU"
+           statistics="true">
+    </cache>
+</ehcache>

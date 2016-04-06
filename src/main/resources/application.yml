@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  main:
+   show-banner: false
+
+info:
+  app:
+    name: Flights
+    description: Ryanair recruitment assignment
+    projectVersion: ${project.version}
+    timestamp: ${timestamp}
+    scmVersion: ${buildNumber}
+
+routesApi:
+  url: https://api.ryanair.com/core/3/routes/
+
+schedulesApi:
+  url: https://api.ryanair.com/timetable/3/schedules/{departure}/{arrival}/years/{year}/months/{yearMonth}
+
+endpoints:
+  health:
+    sensitive: false
+
+middleware:
+  auth:
+    header:
+      name: X-API-AUTH-KEY
+
+jsondoc:
+    version: 1.0
+    basePath: http://localhost:8080
+    packages[0]: me.arturopala.flights.controller
+    playgroundEnabled: true
+    displayMethodAs: URI

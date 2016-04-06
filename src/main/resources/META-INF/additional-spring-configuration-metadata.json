@@ -1,0 +1,14 @@
+{
+    "properties": [
+        {
+            "name": "routesApi.url",
+            "type": "java.lang.String",
+            "description": "Routes API url"
+        },
+        {
+            "name": "schedulesApi.url",
+            "type": "java.lang.String",
+            "description": "Schedules API url"
+        }
+    ]
+}
