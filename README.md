@@ -1,4 +1,6 @@
-#Interconnecting Flights
+#Interconnecting Flights Search
+
+[![Build Status](https://semaphoreci.com/api/v1/arturopala/spring-boot-flights-search/branches/master/badge.svg)](https://semaphoreci.com/arturopala/spring-boot-flights-search)
 
 Spring MVC based RESTful API application which serves information about possible direct
 and interconnected flights (maximum 1 stop) based on the data consumed from external APIs.
