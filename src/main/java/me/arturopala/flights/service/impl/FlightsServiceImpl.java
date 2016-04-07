@@ -103,7 +103,7 @@ public class FlightsServiceImpl implements FlightsService {
     }
 
     public List<Flight> getFlights(Airport departure, Airport arrival, List<YearMonth> months, LocalDateTime from, LocalDateTime to) {
-        return months.stream()
+        return months.parallelStream()
             .map(month -> timetableService.getFlightsTimetable(departure, arrival, month))
             .filter(Optional::isPresent)
             .map(Optional::get)
